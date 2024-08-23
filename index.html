@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Equipamentos - Consulta</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="./index.html">Gestão de Equipamentos</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./cadastro.html">Cadastramento</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Consultar Equipamento</h1>
+
+        <!-- Formulário de Consulta -->
+        <div class="form-container">
+            <h2>Consultar por Código de Barras</h2>
+            <form id="searchForm">
+                <label for="searchBarcode">Código de Barras:</label>
+                <input type="text" id="searchBarcode" name="searchBarcode" required>
+                
+                <button type="submit">Consultar</button>
+            </form>
+        </div>
+
+        <!-- Resultado da Consulta -->
+        <div id="result" class="result-container">
+            <h3>Resultado da Consulta:</h3>
+            <p id="resultContent"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

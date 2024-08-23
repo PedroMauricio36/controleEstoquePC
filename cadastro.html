@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Equipamentos - Cadastramento</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="./index.html">Gestão de Equipamentos</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./index.html">Consulta</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Cadastrar Equipamento</h1>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form-container">
+            <h2>Cadastrar Novo Equipamento</h2>
+            <form id="registerForm">
+                <label for="barcode">Código de Barras:</label>
+                <input type="text" id="barcode" name="barcode" required>
+                
+                <label for="name">Nome do Equipamento:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description"></textarea>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
